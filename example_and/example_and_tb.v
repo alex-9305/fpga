@@ -6,7 +6,7 @@ module example_and_tb;
     reg input_2   = 1'b0;
     wire and_result;
 
-    example_and dut
+    example_and_gate dut
         (
             .input_1(input_1),
             .input_2(input_2),

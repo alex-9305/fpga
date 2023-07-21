@@ -1,0 +1,46 @@
+$date
+	Fri Jul 21 10:52:12 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module example_and_tb $end
+$var wire 1 ! and_result $end
+$var reg 1 " input_1 $end
+$var reg 1 # input_2 $end
+$scope module dut $end
+$var wire 1 ! and_result $end
+$var wire 1 $ and_temp $end
+$var wire 1 " input_1 $end
+$var wire 1 # input_2 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0$
+0#
+0"
+0!
+$end
+#10000
+1"
+#20000
+1!
+1$
+1#
+#30000
+0!
+0$
+0"
+#40000
+0#
+#60000
+1!
+1$
+1#
+1"
+#70000
