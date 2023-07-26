@@ -1,0 +1,6 @@
+-Strukturierung in mehreren Ebenen
+-Höchstes Lvl
+	-Alle notwendigen in- und outputs und Parameter (Adresse, Output-Daten, Buffer für gelesene Daten, ...)
+	-Logik für Tristate-Verhalten von sda und scl
+	-Instanziiert eigentliches Protokoll
+		-enable, reset, sda, scl
