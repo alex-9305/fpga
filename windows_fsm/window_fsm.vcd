@@ -1,0 +1,102 @@
+$date
+	Thu Jul 27 14:03:31 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module window_fsm_tb $end
+$var reg 1 ! button_press $end
+$var reg 1 " clk $end
+$var reg 1 # n_reset $end
+$scope module dut $end
+$var wire 1 ! button_press $end
+$var wire 1 " clk $end
+$var wire 1 # n_reset $end
+$var wire 1 $ next_state $end
+$var wire 1 % open_cw $end
+$var wire 1 & close_ccw $end
+$var reg 1 ' current_state $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#10000
+1#
+1"
+#20000
+0"
+#24000
+x$
+1%
+1!
+#30000
+x&
+x%
+x'
+1"
+#40000
+0"
+#50000
+1"
+#60000
+0"
+#70000
+0!
+1"
+#80000
+0"
+#90000
+1"
+#92000
+1!
+#93000
+0!
+#100000
+0"
+#103000
+0%
+0&
+0#
+#110000
+0$
+0'
+1"
+#120000
+0"
+#125000
+x$
+1%
+1!
+#130000
+1"
+#140000
+0"
+#150000
+1"
+#160000
+0"
+#170000
+1"
+#180000
+0"
+#190000
+1"
+#191000
+0$
+0%
+0!
+#200000
+0"
+#201000

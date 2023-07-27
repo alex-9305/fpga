@@ -11,7 +11,7 @@ module decoder_1hot_3to8_tb;
 
     initial begin
         $dumpfile("decoder_1hot_3to8.vcd");
-        $dumpvars(0, decoder_1hot_3to8);
+        $dumpvars(0, decoder_1hot_3to8_tb);
     end
 
     initial begin
