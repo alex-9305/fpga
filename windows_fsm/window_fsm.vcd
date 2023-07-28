@@ -1,5 +1,5 @@
 $date
-	Thu Jul 27 14:03:31 2023
+	Fri Jul 28 11:36:16 2023
 $end
 $version
 	Icarus Verilog
@@ -15,10 +15,10 @@ $scope module dut $end
 $var wire 1 ! button_press $end
 $var wire 1 " clk $end
 $var wire 1 # n_reset $end
-$var wire 1 $ next_state $end
-$var wire 1 % open_cw $end
-$var wire 1 & close_ccw $end
-$var reg 1 ' current_state $end
+$var reg 1 $ close_ccw $end
+$var reg 1 % current_state $end
+$var reg 1 & next_state $end
+$var reg 1 ' open_cw $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -38,21 +38,28 @@ $end
 #20000
 0"
 #24000
-x$
-1%
+1'
+1&
 1!
 #30000
-x&
-x%
-x'
+0&
+1$
+0'
+1%
 1"
 #40000
 0"
 #50000
+1'
+0$
+1&
+0%
 1"
 #60000
 0"
 #70000
+0'
+1%
 0!
 1"
 #80000
@@ -60,24 +67,24 @@ x'
 #90000
 1"
 #92000
+1$
+0&
 1!
 #93000
+1&
+0$
 0!
 #100000
 0"
 #103000
-0%
 0&
 0#
 #110000
-0$
-0'
+0%
 1"
 #120000
 0"
 #125000
-x$
-1%
 1!
 #130000
 1"
@@ -94,8 +101,6 @@ x$
 #190000
 1"
 #191000
-0$
-0%
 0!
 #200000
 0"
