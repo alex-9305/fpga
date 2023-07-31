@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1690793788" />
+    <testcase name="test_for_error" classname="test_decoder" file="/home/alex/Repos/fpga/cocotb_test/test_decoder.py" lineno="6" time="0.0018665790557861328" sim_time_ns="13.001" ratio_time="6965.14833363137">
+      <failure message="Test failed with RANDOM_SEED=1690793788" />
+    </testcase>
+  </testsuite>
+</testsuites>
