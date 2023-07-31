@@ -5,19 +5,20 @@ from cocotb.clock import Clock
 
 @cocotb.test()
 async def test_for_error(dut):
+    dut.in_bit.value = 0
+    dut.n_reset.value = 0
     cocotb.start_soon(Clock(dut.clk, 1, units="ns").start())
 
-    dut.in_bit = 0
-    dut.n_reset = 0
+    print(dut.in_bit.value)
 
     await Timer(5, units="ns")
-    dut.n_reset = 1
+    dut.n_reset.value = 1
     await Timer(5, units="ns")
-    dut.in_bit = 1
+    dut.in_bit.value = 1
     await Timer(1, units="ns")
-    dut.in_bit = 0
+    dut.in_bit.value = 0
     await Timer(2, units="ns")
-    dut.in_bit = 1
+    dut.in_bit.value = 1
 
     dut._log.info("error_state is %s", dut.error_state.value)
     assert dut.error_state.value == 1, "error_state is not 1!"
