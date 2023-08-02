@@ -2,12 +2,20 @@ import cocotb
 from cocotb.triggers import FallingEdge, Timer
 from cocotb.clock import Clock
 
+async def generate_clock(dut):
+    """Generate clock pulses."""
+
+    for cycle in range(50):
+        dut.clk.value = 0
+        await Timer(1, units="ns")
+        dut.clk.value = 1
+        await Timer(1, units="ns")
 
 @cocotb.test()
 async def test_for_error(dut):
     dut.in_bit.value = 0
     dut.n_reset.value = 0
-    cocotb.start_soon(Clock(dut.clk, 1, units="ns").start())
+    await cocotb.start(generate_clock(dut))  # run the clock "in the background"
 
     print(dut.in_bit.value)
 

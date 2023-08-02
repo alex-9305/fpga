@@ -26,7 +26,7 @@ module window_fsm_tb;
     end
 
     initial begin
-        #10
+        #56
         n_reset <= 1'b1;
         #14
         button_press <= 1'b1;

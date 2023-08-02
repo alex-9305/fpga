@@ -1,8 +1,8 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1690794185" />
-    <testcase name="test_for_error" classname="test_decoder" file="/home/alex/Repos/fpga/cocotb_test/test_decoder.py" lineno="6" time="0.0011451244354248047" sim_time_ns="13.001" ratio_time="11353.351302102852">
-      <failure message="Test failed with RANDOM_SEED=1690794185" />
+    <property name="random_seed" value="1690794812" />
+    <testcase name="test_for_error" classname="test_decoder" file="/home/alex/Repos/fpga/cocotb_test/test_decoder.py" lineno="14" time="0.0019724369049072266" sim_time_ns="13.001" ratio_time="6591.3388497522055">
+      <failure message="Test failed with RANDOM_SEED=1690794812" />
     </testcase>
   </testsuite>
 </testsuites>
